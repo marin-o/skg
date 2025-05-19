@@ -7,7 +7,7 @@ from collections import Counter
 from gensim.models import Word2Vec
 from nltk.tokenize import TweetTokenizer, WhitespaceTokenizer, word_tokenize
 
-data_root_location = 'D:/Python projects/Style-Transfer-Baselines/data'
+data_root_location = '../data' #'D:/Python projects/Style-Transfer-Baselines/data'
 
 
 def load_samples(dataset_name, subset_name):

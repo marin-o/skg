@@ -5,7 +5,7 @@ from math import log
 from tqdm import tqdm
 from nltk.corpus import wordnet
 from itertools import combinations
-from create_nodes import load_samples, load_word_nodes, tokenize, tag_tokens
+from graph_creation.create_nodes import load_samples, load_word_nodes, tokenize, tag_tokens
 
 
 def create_co_occurrence_with_pmi_edge(dataset_name, style_name, sliding_window_size=3):

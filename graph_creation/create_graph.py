@@ -1,8 +1,8 @@
 import os
 import networkx as nx
 from argparse import ArgumentParser
-from create_nodes import create_word_nodes, create_word_embeddings, load_word_nodes
-from create_edges import create_co_occurrence_with_pmi_edge, find_synonyms, \
+from graph_creation.create_nodes import create_word_nodes, create_word_embeddings, load_word_nodes
+from graph_creation.create_edges import create_co_occurrence_with_pmi_edge, find_synonyms, \
     find_antonyms, find_hyponyms, find_hypernyms, load_edges
 
 
@@ -81,8 +81,8 @@ if __name__ == '__main__':
     style_1_name = args.style_1_name
     style_2_name = args.style_2_name
 
-    if not os.path.exists(f'../data/skg/{dataset_name}'):
-        os.mkdir(f'../data/skg/{dataset_name}')
+    if not os.path.exists(f'data/skg/{dataset_name}'):
+        os.mkdir(f'/data/skg/{dataset_name}')
 
     print(f'Creating SKG for dataset {dataset_name}...')
 
